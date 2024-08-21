@@ -14,6 +14,8 @@ const add= ()=>{
 
 }
 
+const addNumbers3 = (a,b)=>(a+b) //function return
+
 const calculate ={
     addNumbers: function(a,b){
         const c=a+b
@@ -37,3 +39,19 @@ console.log(calculate.addNumbers1(10,5))
 //header
 // sidebar
 // footer
+
+
+//create a js function to get the sum of number in an array
+
+const getSum=(arr)=>{
+    let sum=0;
+    console.log("length:",arr.length)
+    for(i=0;i<arr.length;i++){
+        sum+=arr[i]
+    }
+    return sum
+
+}
+const arr=[1,2,3,4,5,6,7,8,9,10]
+const result=getSum(arr)
+console.log("the sum is: ",result)
